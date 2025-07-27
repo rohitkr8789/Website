@@ -84,7 +84,17 @@ body{
     .contain{
         height: 220vmin;
     }
+    #newBtn{
+    padding: 2.4vmin;
+    font-size: 1.3rem;
+    border-radius: 1.2rem;
 }
+#resetbtn{
+    padding: 2.5vmin;
+    font-size: 1.4rem;
+}
+}
+
 @media(max-width:280px){
     .btn1{
         display: flex;
@@ -95,4 +105,13 @@ body{
     .contain{
         height: 220vmin;
     }
+    #resetbtn{
+    padding: 2.4vmin;
+    font-size: 1.3rem;
+}
+    #newBtn{
+    padding: 2.5vmin;
+    font-size: 1.4rem;
+    border-radius: 1.2rem;
+}
 }
