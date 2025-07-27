@@ -79,6 +79,10 @@ body{
         width: 13vb;
         height: 13vh;
        flex-wrap: wrap;
+       font-size: 12vmin;
+    }
+    .contain{
+        height: 220vmin;
     }
 }
 @media(max-width:280px){
@@ -86,5 +90,9 @@ body{
         display: flex;
         height: 10vh;
         width: 10vb;
+         font-size: 12vmin;
+    }
+    .contain{
+        height: 220vmin;
     }
 }
