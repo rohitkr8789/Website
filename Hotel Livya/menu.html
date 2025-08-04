@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu - Hotel Livya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-stars logo-icon"></i>
+                <span class="logo-text">Hotel Livya</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dining.html">Dining</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="amenities.html">Amenities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary ms-2" href="booking.html" target="_blank">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white py-5" style="margin-top: 76px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold">Restaurant Menu</h1>
+                    <p class="lead">Exquisite cuisine prepared by our award-winning chefs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Our Menu</h2>
+                    <p class="lead text-muted">Discover our culinary masterpieces</p>
+                </div>
+            </div>
+            
+            <!-- Appetizers -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="text-primary mb-4">Appetizers</h3>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card menu-item">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" class="img-fluid h-100" style="object-fit: cover;" alt="Bruschetta">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <h5 class="card-title">Bruschetta</h5>
+                                        <span class="price">$12</span>
+                                    </div>
+                                    <p class="card-text">Fresh tomatoes, basil, and mozzarella on toasted bread</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card menu-item">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" class="img-fluid h-100" style="object-fit: cover;" alt="Calamari">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <h5 class="card-title">Calamari Fritti</h5>
+                                        <span class="price">$16</span>
+                                    </div>
+                                    <p class="card-text">Crispy fried squid with marinara sauce</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Courses -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="text-primary mb-4">Main Courses</h3>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card menu-item">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" class="img-fluid h-100" style="object-fit: cover;" alt="Grilled Salmon">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <h5 class="card-title">Grilled Salmon</h5>
+                                        <span class="price">$32</span>
+                                    </div>
+                                    <p class="card-text">Atlantic salmon with seasonal vegetables and lemon butter sauce</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card menu-item">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" class="img-fluid h-100" style="object-fit: cover;" alt="Beef Tenderloin">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <h5 class="card-title">Beef Tenderloin</h5>
+                                        <span class="price">$38</span>
+                                    </div>
+                                    <p class="card-text">8oz tenderloin with roasted potatoes and red wine reduction</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="text-primary mb-4">Desserts</h3>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card menu-item">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" class="img-fluid h-100" style="object-fit: cover;" alt="Tiramisu">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <h5 class="card-title">Tiramisu</h5>
+                                        <span class="price">$14</span>
+                                    </div>
+                                    <p class="card-text">Classic Italian dessert with coffee and mascarpone</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card menu-item">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" class="img-fluid h-100" style="object-fit: cover;" alt="Chocolate Lava Cake">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <h5 class="card-title">Chocolate Lava Cake</h5>
+                                        <span class="price">$16</span>
+                                    </div>
+                                    <p class="card-text">Warm chocolate cake with molten center and vanilla ice cream</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beverages -->
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-primary mb-4">Beverages</h3>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card menu-item">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1546173159-315724a31696?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" class="img-fluid h-100" style="object-fit: cover;" alt="Wine Selection">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <h5 class="card-title">Wine Selection</h5>
+                                        <span class="price">$12-45</span>
+                                    </div>
+                                    <p class="card-text">Extensive wine list featuring local and international selections</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card menu-item">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" class="img-fluid h-100" style="object-fit: cover;" alt="Craft Cocktails">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <h5 class="card-title">Craft Cocktails</h5>
+                                        <span class="price">$15-18</span>
+                                    </div>
+                                    <p class="card-text">Signature cocktails prepared by our expert mixologists</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Hotel Livya</h5>
+                    <p>Experience luxury and comfort in the heart of the city.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2024 Hotel Livya. All rights reserved.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> 

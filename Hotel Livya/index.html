@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Livya - Luxury Accommodations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                
+                <i class="fa-solid fa-hotel"></i>
+                <span class="logo-text">Hotel Livya</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dining.html">Dining</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="amenities.html">Amenities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary ms-2" href="booking.html" target="_blank">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="row min-vh-100 align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-4 fw-bold text-white mb-4">Welcome to Hotel Livya</h1>
+                        <p class="lead text-white mb-4">Experience luxury and comfort in the heart of the city. Your perfect stay awaits with world-class amenities and exceptional service.</p>
+                        <div class="hero-buttons">
+                            <a href="#rooms" class="btn btn-primary btn-lg me-3">View Rooms</a>
+                            <a href="#booking" class="btn btn-outline-light btn-lg">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Our Rooms</h2>
+                    <p class="lead text-muted">Choose from our selection of luxurious accommodations</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card room-card h-100">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Standard Room">
+                        <div class="card-body">
+                            <h5 class="card-title">Standard Room</h5>
+                            <p class="card-text">Comfortable and elegant room with modern amenities, perfect for solo travelers or couples.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Queen-size bed</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Private bathroom</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Free WiFi</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> City view</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$120/night</span>
+                                <button class="btn btn-primary" onclick="openRoomModal('standard')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card room-card h-100">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Deluxe Room">
+                        <div class="card-body">
+                            <h5 class="card-title">Deluxe Room</h5>
+                            <p class="card-text">Spacious room with premium furnishings and additional amenities for a luxurious stay.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> King-size bed</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Luxury bathroom</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Balcony access</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Room service</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$180/night</span>
+                                <button class="btn btn-primary" onclick="openRoomModal('deluxe')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card room-card h-100">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Suite">
+                        <div class="card-body">
+                            <h5 class="card-title">Executive Suite</h5>
+                            <p class="card-text">Ultimate luxury with separate living area, premium amenities, and stunning city views.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Separate living room</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Jacuzzi tub</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Premium amenities</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Concierge service</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$280/night</span>
+                                <button class="btn btn-primary" onclick="openRoomModal('suite')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">About Hotel Livya</h2>
+                    <p class="lead mb-4">Established in 2010, Hotel Livya has been providing exceptional hospitality services to guests from around the world.</p>
+                    <p class="mb-4">Our commitment to excellence, attention to detail, and personalized service sets us apart. We believe in creating memorable experiences that exceed expectations.</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="feature-item">
+                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                <h5>5-Star Service</h5>
+                                <p>World-class hospitality</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="feature-item">
+                                <i class="bi bi-geo-alt-fill text-primary fs-4"></i>
+                                <h5>Prime Location</h5>
+                                <p>Heart of the city</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="img-fluid rounded" alt="Hotel Livya">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">What Our Guests Say</h2>
+                    <p class="lead text-muted">Don't just take our word for it</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body text-center">
+                            <div class="stars mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text">"Exceptional service and beautiful rooms. The staff went above and beyond to make our stay memorable."</p>
+                            <h6 class="card-title">Sarah Johnson</h6>
+                            <small class="text-muted">Business Traveler</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body text-center">
+                            <div class="stars mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text">"Perfect location, luxurious amenities, and friendly staff. Highly recommend for both business and leisure."</p>
+                            <h6 class="card-title">Michael Chen</h6>
+                            <small class="text-muted">Tourist</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body text-center">
+                            <div class="stars mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text">"The attention to detail is remarkable. From the room design to the dining experience, everything was perfect."</p>
+                            <h6 class="card-title">Emily Rodriguez</h6>
+                            <small class="text-muted">Honeymooner</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Book Your Stay</h2>
+                    <p class="lead">Reserve your perfect room today</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="bookingForm" class="booking-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="checkIn" class="form-label">Check-in Date</label>
+                                <input type="date" class="form-control" id="checkIn" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="checkOut" class="form-label">Check-out Date</label>
+                                <input type="date" class="form-control" id="checkOut" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="roomType" class="form-label">Room Type</label>
+                                <select class="form-select" id="roomType" required>
+                                    <option value="">Select Room Type</option>
+                                    <option value="standard">Standard Room - $120/night</option>
+                                    <option value="deluxe">Deluxe Room - $180/night</option>
+                                    <option value="suite">Executive Suite - $280/night</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="guests" class="form-label">Number of Guests</label>
+                                <select class="form-select" id="guests" required>
+                                    <option value="">Select Guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="specialRequests" class="form-label">Special Requests</label>
+                                <textarea class="form-control" id="specialRequests" rows="3" placeholder="Any special requests or preferences..."></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-light btn-lg">Book Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Contact Us</h2>
+                    <p class="lead text-muted">Get in touch with us</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h4>Get in Touch</h4>
+                        <p class="mb-4">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                        <div class="contact-item mb-3">
+                            <i class="bi bi-geo-alt-fill text-primary me-3"></i>
+                            <span>Near Railway Station, Ragir  Nalanda, 803116</span>
+                        </div>
+                        <div class="contact-item mb-3">
+                            <i class="bi bi-telephone-fill text-primary me-3"></i>
+                            <span>+91 8789 08 5464</span>
+                        </div>
+                        <div class="contact-item mb-3">
+                            <i class="bi bi-envelope-fill text-primary me-3"></i>
+                            <span>info@hotellivya.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-clock-fill text-primary me-3"></i>
+                            <span>24/7 Front Desk Service</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form id="contactForm" class="contact-form">
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="contactName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="contactEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactSubject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="contactSubject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Hotel Livya</h5>
+                    <p>Experience luxury and comfort in the heart of the city.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2025 Hotel Livya. All rights reserved.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100010678024330" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com/k_rohit_kumar__05/" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rohit-kumar-1b165a282/" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Room Detail Modal -->
+    <div class="modal fade" id="roomModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roomModalTitle">Room Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="roomModalContent">
+                        <!-- Content will be loaded dynamically -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="scrollToBooking()">Book This Room</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> 

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay - Hotel Livya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-stars logo-icon"></i>
+                <span class="logo-text">Hotel Livya</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dining.html">Dining</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="amenities.html">Amenities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary ms-2 active" href="booking.html">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white py-5" style="margin-top: 76px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold">Book Your Stay</h1>
+                    <p class="lead">Reserve your perfect room and experience luxury at Hotel Livya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="mb-0"><i class="bi bi-calendar-check me-2"></i>Reservation Details</h3>
+                        </div>
+                        <div class="card-body">
+                            <form id="bookingForm" class="booking-form">
+                                <!-- Guest Information -->
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h5 class="text-primary mb-3">Guest Information</h5>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="firstName" class="form-label">First Name *</label>
+                                        <input type="text" class="form-control" id="firstName" name="firstName" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="lastName" class="form-label">Last Name *</label>
+                                        <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">Phone Number *</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                                    </div>
+                                </div>
+
+                                <!-- Stay Details -->
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h5 class="text-primary mb-3">Stay Details</h5>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="checkIn" class="form-label">Check-in Date *</label>
+                                        <input type="date" class="form-control" id="checkIn" name="checkIn" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="checkOut" class="form-label">Check-out Date *</label>
+                                        <input type="date" class="form-control" id="checkOut" name="checkOut" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="adults" class="form-label">Number of Adults *</label>
+                                        <select class="form-select" id="adults" name="adults" required>
+                                            <option value="">Select Adults</option>
+                                            <option value="1">1 Adult</option>
+                                            <option value="2">2 Adults</option>
+                                            <option value="3">3 Adults</option>
+                                            <option value="4">4 Adults</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="children" class="form-label">Number of Children</label>
+                                        <select class="form-select" id="children" name="children">
+                                            <option value="0">No Children</option>
+                                            <option value="1">1 Child</option>
+                                            <option value="2">2 Children</option>
+                                            <option value="3">3 Children</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Room Selection -->
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h5 class="text-primary mb-3">Room Selection</h5>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="roomType" class="form-label">Room Type *</label>
+                                        <select class="form-select" id="roomType" name="roomType" required>
+                                            <option value="">Select Room Type</option>
+                                            <option value="standard-single">Standard Single - $80/night</option>
+                                            <option value="standard-double">Standard Double - $120/night</option>
+                                            <option value="standard-twin">Standard Twin - $110/night</option>
+                                            <option value="deluxe-king">Deluxe King - $180/night</option>
+                                            <option value="deluxe-suite">Deluxe Suite - $280/night</option>
+                                            <option value="presidential">Presidential Suite - $450/night</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="roomCount" class="form-label">Number of Rooms *</label>
+                                        <select class="form-select" id="roomCount" name="roomCount" required>
+                                            <option value="1">1 Room</option>
+                                            <option value="2">2 Rooms</option>
+                                            <option value="3">3 Rooms</option>
+                                            <option value="4">4 Rooms</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Special Requests -->
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h5 class="text-primary mb-3">Special Requests</h5>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="specialRequests" class="form-label">Special Requests or Preferences</label>
+                                        <textarea class="form-control" id="specialRequests" name="specialRequests" rows="4" placeholder="Any special requests, dietary requirements, or preferences..."></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Additional Services -->
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h5 class="text-primary mb-3">Additional Services</h5>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="airportTransfer" name="airportTransfer">
+                                            <label class="form-check-label" for="airportTransfer">
+                                                Airport Transfer ($50)
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="earlyCheckIn" name="earlyCheckIn">
+                                            <label class="form-check-label" for="earlyCheckIn">
+                                                Early Check-in ($30)
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="lateCheckOut" name="lateCheckOut">
+                                            <label class="form-check-label" for="lateCheckOut">
+                                                Late Check-out ($30)
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="parking" name="parking">
+                                            <label class="form-check-label" for="parking">
+                                                Parking Space ($20/night)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Terms and Conditions -->
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="termsAccepted" name="termsAccepted" required>
+                                            <label class="form-check-label" for="termsAccepted">
+                                                I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a> and <a href="privacy.html" target="_blank">Privacy Policy</a> *
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg px-5">
+                                            <i class="bi bi-check-circle me-2"></i>Confirm Booking
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Summary -->
+                <div class="col-lg-4">
+                    <div class="card shadow sticky-top" style="top: 100px;">
+                        <div class="card-header bg-secondary text-white">
+                            <h5 class="mb-0"><i class="bi bi-calculator me-2"></i>Booking Summary</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="bookingSummary">
+                                <p class="text-muted">Select your dates and room to see pricing details.</p>
+                            </div>
+                            <hr>
+                            <div class="d-grid">
+                                <button class="btn btn-outline-primary" onclick="window.print()">
+                                    <i class="bi bi-printer me-2"></i>Print Summary
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="card shadow mt-4">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="mb-0"><i class="bi bi-telephone me-2"></i>Need Help?</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-2"><strong>Call us:</strong></p>
+                            <p class="mb-2"><i class="bi bi-phone me-2"></i>+1 (555) 123-4567</p>
+                            <p class="mb-2"><strong>Email us:</strong></p>
+                            <p class="mb-0"><i class="bi bi-envelope me-2"></i>bookings@hotellivya.com</p>
+                            <hr>
+                            <p class="small text-muted">Our reservation team is available 24/7 to assist you with your booking.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Hotel Livya</h5>
+                    <p>Experience luxury and comfort in the heart of the city.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2024 Hotel Livya. All rights reserved.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        // Booking summary calculation
+        function updateBookingSummary() {
+            const checkIn = document.getElementById('checkIn').value;
+            const checkOut = document.getElementById('checkOut').value;
+            const roomType = document.getElementById('roomType').value;
+            const roomCount = document.getElementById('roomCount').value;
+            
+            if (checkIn && checkOut && roomType) {
+                const startDate = new Date(checkIn);
+                const endDate = new Date(checkOut);
+                const nights = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
+                
+                const prices = {
+                    'standard-single': 80,
+                    'standard-double': 120,
+                    'standard-twin': 110,
+                    'deluxe-king': 180,
+                    'deluxe-suite': 280,
+                    'presidential': 450
+                };
+                
+                const pricePerNight = prices[roomType] || 0;
+                const totalPrice = pricePerNight * nights * parseInt(roomCount);
+                
+                const summary = `
+                    <div class="mb-3">
+                        <strong>Check-in:</strong> ${checkIn}<br>
+                        <strong>Check-out:</strong> ${checkOut}<br>
+                        <strong>Nights:</strong> ${nights}<br>
+                        <strong>Room Type:</strong> ${roomType.replace('-', ' ').toUpperCase()}<br>
+                        <strong>Rooms:</strong> ${roomCount}
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Price per night:</span>
+                        <span>$${pricePerNight}</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span>Total:</span>
+                        <strong>$${totalPrice}</strong>
+                    </div>
+                `;
+                
+                document.getElementById('bookingSummary').innerHTML = summary;
+            }
+        }
+        
+        // Add event listeners for real-time calculation
+        document.getElementById('checkIn').addEventListener('change', updateBookingSummary);
+        document.getElementById('checkOut').addEventListener('change', updateBookingSummary);
+        document.getElementById('roomType').addEventListener('change', updateBookingSummary);
+        document.getElementById('roomCount').addEventListener('change', updateBookingSummary);
+    </script>
+</body>
+</html> 

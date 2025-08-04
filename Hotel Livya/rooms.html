@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms & Suites - Hotel Livya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-stars logo-icon"></i>
+                <span class="logo-text">Hotel Livya</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dining.html">Dining</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="amenities.html">Amenities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary ms-2" href="booking.html" target="_blank">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white py-5" style="margin-top: 76px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold">Rooms & Suites</h1>
+                    <p class="lead">Experience luxury and comfort in our carefully designed accommodations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Categories -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Choose Your Perfect Stay</h2>
+                    <p class="lead text-muted">From cozy standard rooms to luxurious suites</p>
+                </div>
+            </div>
+            
+            <!-- Standard Rooms -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="mb-4">Standard Rooms</h3>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card room-card h-100">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Standard Single">
+                        <div class="card-body">
+                            <h5 class="card-title">Standard Single</h5>
+                            <p class="card-text">Perfect for solo travelers with all essential amenities.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Single bed</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Private bathroom</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Free WiFi</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> City view</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$80/night</span>
+                                <button class="btn btn-primary" onclick="openRoomModal('standard-single')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card room-card h-100">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Standard Double">
+                        <div class="card-body">
+                            <h5 class="card-title">Standard Double</h5>
+                            <p class="card-text">Comfortable room with queen-size bed for couples.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Queen-size bed</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Private bathroom</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Free WiFi</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> City view</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$120/night</span>
+                                <button class="btn btn-primary" onclick="openRoomModal('standard-double')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card room-card h-100">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Standard Twin">
+                        <div class="card-body">
+                            <h5 class="card-title">Standard Twin</h5>
+                            <p class="card-text">Two single beds perfect for friends or colleagues.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Two single beds</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Private bathroom</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Free WiFi</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> City view</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$110/night</span>
+                                <button class="btn btn-primary" onclick="openRoomModal('standard-twin')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deluxe Rooms -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="mb-4">Deluxe Rooms</h3>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card room-card h-100">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Deluxe King">
+                        <div class="card-body">
+                            <h5 class="card-title">Deluxe King</h5>
+                            <p class="card-text">Spacious room with king-size bed and premium amenities.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> King-size bed</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Luxury bathroom</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Balcony access</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Room service</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$180/night</span>
+                                <button class="btn btn-primary" onclick="openRoomModal('deluxe-king')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card room-card h-100">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Deluxe Suite">
+                        <div class="card-body">
+                            <h5 class="card-title">Deluxe Suite</h5>
+                            <p class="card-text">Luxurious suite with separate living area and premium features.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Separate living room</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> King-size bed</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Jacuzzi tub</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Concierge service</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$280/night</span>
+                                <button class="btn btn-primary" onclick="openRoomModal('deluxe-suite')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Executive Suites -->
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="mb-4">Executive Suites</h3>
+                </div>
+                <div class="col-lg-12 mb-4">
+                    <div class="card room-card">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid h-100" style="object-fit: cover;" alt="Executive Suite">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Presidential Suite</h5>
+                                    <p class="card-text">The ultimate luxury experience with panoramic views and exclusive amenities.</p>
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi bi-check-circle-fill text-success"></i> Separate living and dining areas</li>
+                                        <li><i class="bi bi-check-circle-fill text-success"></i> Master bedroom with king bed</li>
+                                        <li><i class="bi bi-check-circle-fill text-success"></i> Luxury bathroom with jacuzzi</li>
+                                        <li><i class="bi bi-check-circle-fill text-success"></i> Private balcony</li>
+                                        <li><i class="bi bi-check-circle-fill text-success"></i> 24/7 butler service</li>
+                                        <li><i class="bi bi-check-circle-fill text-success"></i> Premium amenities</li>
+                                    </ul>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="price">$450/night</span>
+                                        <button class="btn btn-primary" onclick="openRoomModal('presidential')">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Features -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Room Features</h2>
+                    <p class="lead text-muted">All our rooms include these premium amenities</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <i class="bi bi-wifi text-primary fs-1 mb-3"></i>
+                        <h5>Free WiFi</h5>
+                        <p>High-speed internet access throughout your stay</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <i class="bi bi-tv text-primary fs-1 mb-3"></i>
+                        <h5>Smart TV</h5>
+                        <p>Streaming services and cable channels available</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <i class="bi bi-snow text-primary fs-1 mb-3"></i>
+                        <h5>Air Conditioning</h5>
+                        <p>Individual climate control for your comfort</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <i class="bi bi-shield-check text-primary fs-1 mb-3"></i>
+                        <h5>24/7 Security</h5>
+                        <p>Round-the-clock security for your peace of mind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Hotel Livya</h5>
+                    <p>Experience luxury and comfort in the heart of the city.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2024 Hotel Livya. All rights reserved.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> 
